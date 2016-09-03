@@ -21,7 +21,11 @@ public:
 	ll()
 	{
 		head = NULL;
-
+	}
+	~ll()
+	{
+		clear();
+		free(head);
 	}
 	void insert(int pos , int obj)
 	{
