@@ -45,7 +45,7 @@ int main()
 	int a[16]={17,7,2,34,19,0,64,0,73,35,5,1,8,88,4,6};
 	int k = 4;
 	int size=16;
-	int c[8];
+	int* c = malloc((int*) k*(sizeof(int)));
 	for (int i = 0; i < 2*k; ++i)
 	{
 		c[i]=a[i];
@@ -65,4 +65,5 @@ int main()
 	{
 		cout<<c[i]<<endl;
 	}
+	free(c);
 }
