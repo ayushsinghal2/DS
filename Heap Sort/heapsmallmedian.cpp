@@ -1,4 +1,4 @@
-// k smallest number with median property
+// k smallest number with rank function
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -42,9 +42,9 @@ int rank (int a[] , int i , int j ,int r )
 }
 int main()
 {
-	int a[16]={17,7,2,34,19,0,64,10,73,35,5,1,8,88,4,6};
+	int a[17]={17,7,2,34,19,0,64,10,73,35,5,1,8,88,4,6,3};
 	int k = 4;
-	int size=16;
+	int size=17;
 	int* c;  
 	c = (int *)calloc(2*k,sizeof(int));
 	for (int i = 0; i < 2*k; ++i)
